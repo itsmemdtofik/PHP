@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Orderd items</title>
+	<style type="text/css">
+		
+		input[type="text"]{
+
+			background-color: pink;
+			color:black;
+			font-family: arial black;
+			border-bottom-color: white;
+			border-top-color: blue;
+			border-left-color: blue;
+			padding-left: 10px;
+			
+		}
+		input[type="submit"]{
+
+			background-color: purple;
+			color:white;
+			font-family: arial black;
+			border-bottom-color: white;
+			border-top-color: white;
+			width:150px;
+			height: 30px;
+		}
+		form{
+			margin-top:50px;
+			border:2px solid cyan;
+			padding-left: 30px;
+			background-color: rgba(0,0,0,.5);
+			width:900px;
+			height:540px;
+		}
+	</style>
+</head>
+<body background="dd1.jpg" text="white"><center>
+
+	<form method="POST" action="lpgm7a.php">
+		<h2>Enter data</h2><br>
+		<table>
+			<tr>
+				<td><h4>Username  :-</h4></td>
+				<td><input type="text" name="username" required="" /></td>
+			</tr>
+
+			<tr>
+				<td><h4>Items :-</h4></td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox" name="option1" >Four 100 watt light bulbs Rs.20</td>
+				<td><input type="text" name="val1" size="2" ></td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox" name="option2" >Eight 100 watt light bulbs Rs.30</td>
+				<td><input type="text" name="val2" size="2"></td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox" name="option3" >Four 100 watt long-life light bulbs Rs.40</td>
+				<td><input type="text" name="val3" size="2" ></td>
+			</tr>
+
+			<tr>
+				<td><input type="checkbox" name="option4" >Eight 100 watt long-life light bulbs Rs.70</td>
+				<td><input type="text" name="val4" size="2" ></td>
+			</tr>
+
+			<tr>
+				<td><h4>Payment mode :-</h4></td>
+			</tr>
+
+			<tr>
+				<td><input type="radio" name="group1" value="visa" required="">Visa</td>
+			</tr>
+
+			<tr>
+				<td><input type="radio" name="group1" value="mastercard" required="">Mastercard</td>
+			</tr>
+
+			<tr>
+				<td><input type="radio" name="group1" value="discover" required="">Discover</td><br>
+			
+			
+				<td><input type="submit" name="submit"/></td>
+			</tr>
+		</table>
+	</form>
+
+</center>
+</body>
+</html>
