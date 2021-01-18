@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Display</title>
+	<title>BUYER | CODE | TOFIK</title>
 	<style type="text/css">
 		
 		table{
