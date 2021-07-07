@@ -1,1 +1,311 @@
+<html>
 
+<head>
+    <title>DEMO</title>
+    <style type="text/css">
+        .text {
+            position: absolute;
+            margin-top: 2%;
+            transform: translate(-50%, -50%);
+            padding-left: 100%;
+        }
+
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+
+
+        }
+
+
+
+        ul li {
+            font-size: 40px;
+            letter-spacing: 10px;
+            text-shadow: 1px 10px 10px #000042;
+            font-family: JetBrains Mono;
+            font-weight: bold;
+        }
+
+
+
+        ul li:nth-child(1) {
+            color: #fff;
+        }
+
+        ul li:nth-child(2) {
+            color: purple;
+            font-weight: bolder;
+        }
+
+        ul li:nth-child(3) {
+            color: orange;
+            font-weight: bolder;
+        }
+
+
+        ul li:nth-child(4) {
+            color: aliceblue;
+            font-weight: bolder;
+        }
+
+        ul li:nth-child(5) {
+            color: purple;
+            font-weight: bolder;
+        }
+
+        ul li:nth-child(6) {
+            color: black;
+            font-weight: bolder;
+        }
+
+        ul li:nth-child(7) {
+            color: white;
+            font-weight: bolder;
+        }
+
+        ul li:nth-child(8) {
+            color: lightcoral;
+            font-weight: bolder;
+        }
+
+        ul li:nth-child(9) {
+            color: red;
+            font-weight: bolder;
+        }
+
+        ul li:nth-child(10) {
+            color: yellow;
+            font-weight: bolder;
+        }
+
+        ul li:nth-child(11) {
+            color: black;
+            font-weight: bolder;
+        }
+
+        ul li:nth-child(12) {
+            color: whitesmoke;
+            font-weight: bolder;
+        }
+
+        form {
+            background:rgba(255,0,0,.4);
+            color: white;
+            border: 1px solid black;
+            font-size: 10px;
+            font-family: arial black;
+            width: 760px;
+            height: 550px;
+            margin-top: 10px;
+            margin-left: 230px;
+            padding-left: 100px;
+            padding-top: 10px;
+            border-radius: 100px/20px;
+            box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px 10px black inset;
+
+        }
+
+
+        input[type="text"] {
+            width: 150px;
+            height: 30px;
+            padding-left: 15px;
+            font-family: arial black;
+            color: white;
+            background-color: black;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        input[type="text"]:hover {
+            width: 150px;
+            height: 30px;
+            padding-left: 15px;
+            font-family: arial black;
+            color: white;
+            border: 2px solid white;
+            background-color: black;
+        }
+
+        input[type="button"] {
+            width: 250px;
+            height: 33px;
+            border-bottom-color: red;
+            padding-left: 15px;
+            font-size: 18px;
+            font-family: arial black;
+            color: black;
+            background-color: snow;
+            cursor: pointer;
+        }
+
+       
+
+        input[type="reset"] {
+            width: 700px;
+            height: 45px;
+            padding-left: 15px;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            color: black;
+            background: indigo;
+            cursor: pointer;
+            border-radius: 50px;
+            text-transform: uppercase;
+            border: none;
+           
+
+        }
+        input[type="reset"]:active{
+            outline-style:dotted ;
+            color: white;
+            outline-color: white;
+            background-color: orange;
+           
+        }
+
+        h1 {
+            font-family: arial black;
+            font-size: 40px;
+            color: black;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body bgcolor="lightblue">
+    <script type='text/javascript'>
+        function myfun1() {
+
+            var a = parseInt(document.f1.q1.value);
+            var b = parseInt(document.f1.q2.value);
+            var add = a + b;
+            document.f1.q3.value = add;
+
+
+        }
+        function myfun2() {
+
+            var a = parseInt(document.f1.w1.value);
+            var b = parseInt(document.f1.w2.value);
+            var mul = a * b;
+            document.f1.w3.value = mul;
+
+
+        }
+        function myfun3() {
+
+            var a = parseInt(document.f1.e1.value);
+            var b = parseInt(document.f1.e2.value);
+            var sub = a - b;
+            document.f1.e3.value = sub;
+
+
+        }
+        function myfun4() {
+
+            var a = parseInt(document.f1.r1.value);
+            var b = parseInt(document.f1.r2.value);
+            var div = a / b;
+            document.f1.r3.value = div;
+
+
+        }
+        function myfun5() {
+
+            var a = parseInt(document.f1.t1.value);
+            var b = parseInt(document.f1.t2.value);
+            while (a != b) {
+                if (a > b)
+                    a = a - b;
+                else
+                    b = b - a;
+            }
+
+            document.f1.t3.value = a;
+
+
+        }
+
+
+
+
+    </script>
+    <div class="text">
+
+        <ul>
+            <li>M</li>
+            <li>Y</li>
+            <li></li>
+
+            <li>C</li>
+            <li>A</li>
+            <li>L</li>
+            <li>C</li>
+            <li>U</li>
+            <li>L</li>
+            <li>A</li>
+            <li>T</li>
+            <li>O</li>
+            <li>R</li>
+
+        </ul>
+    </div><br><br><br>
+
+    <form name="f1">
+        <div class="aa1">
+            <h2>ADDITION</h2>
+            <input type="text" name="q1" placeholder="Number1">
+            <input type="text" name="q2" placeholder="Number2">
+            <input type="button" value="ADD" onclick="myfun1()">
+            <input type="text" name="q3" placeholder="The SUM==">
+        </div><br>
+        <div class="bb1">
+            <h2>MULTIPLICATION</h2>
+            <input type="text" name="w1" placeholder="Number1">
+            <input type="text" name="w2" placeholder="Number2">
+            <input type="button" value="MUL" onclick="myfun2()">
+            <input type="text" name="w3" placeholder="The Sum==">
+        </div><br>
+        <div class="cc1">
+            <h2>SUBSTRACTION</h2>
+            <input type="text" name="e1" placeholder="Number1">
+            <input type="text" name="e2" placeholder="Number2">
+            <input type="button" value="SUB" onclick="myfun3()">
+            <input type="text" name="e3" placeholder="the sum ==">
+        </div><br>
+        <div class="dd1">
+            <h2 style="color: black;">DIVISION</h2>
+            <input type="text" name="r1" placeholder="Number1">
+            <input type="text" name="r2" placeholder="Number2">
+            <input type="button" value="DIV" onclick="myfun4()">
+            <input type="text" name="r3" placeholder="The sum ==">
+        </div><br>
+        <div class="ee1">
+            <h2 style="color: black;">GCD OF TWO NUMBER</h2>
+            <input type="text" name="t1" placeholder="Number1">
+            <input type="text" name="t2" placeholder="Number2">
+            <input type="button" value="GCD" onclick="myfun5()">
+            <input type="text" name="t3" placeholder="The sum=="><br><br><br><br><br>
+            <input type="reset" name="reset" value="Reset">
+        </div><br>
+
+
+
+
+    </form>
+
+
+
+
+</body>
+
+</html>
