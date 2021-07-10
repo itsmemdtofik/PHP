@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home | Page</title>
+
+<head>
+    <style type="text/css">
+        * {
+            margin: 0%;
+            padding: 0%;
+            background: border-box;
+        }
+        
+        .main {
+            width: 100%;
+            height: 60px;
+            background-color: floralwhite;
+            position: relative;
+            top: 80px;
+            margin: 0 0;
+            border-bottom: 1px solid black;
+        }
+        
+        h3 {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 20px;
+            color: white;
+            font-weight: bolder;
+        }
+        
+        h3 {
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+            color: black;
+        }
+        
+        a {
+            display: inline-block;
+            letter-spacing: 5px;
+            font-weight: bolder;
+            font-size: 12px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+            color: black;
+            text-decoration: none;
+            background-color: floralwhite;
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            padding-top: 19px;
+        }
+        
+        a:hover {
+            color: white;
+            width: 200px;
+            height: 40px;
+            background-color: red;
+        }
+        
+        .text {
+            position: absolute;
+            margin-left: 50%;
+            margin-top: 2%;
+            transform: translate(-50%, -50%);
+            background: lightskyblue;
+            width: 100%;
+            height: 100px;
+            left: 0;
+        }
+        
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+        }
+        
+        ul li {
+            font-size: 40px;
+            letter-spacing: 10px;
+            text-shadow: 1px 5px 10px #000042;
+            font-family: sans-serif;
+        }
+        
+        ul li:nth-child(1) {
+            padding-left: 100px;
+            padding-top: 20px;
+            color: #fff;
+        }
+        
+        ul li:nth-child(2) {
+            color: purple;
+            padding-top: 20px;
+        }
+        
+        ul li:nth-child(3) {
+            color: orange;
+            padding-top: 20px;
+        }
+        
+        ul li:nth-child(4) {
+            color: blue;
+            padding-top: 20px;
+        }
+        
+        ul li:nth-child(5) {
+            color: white;
+            padding-top: 20px;
+        }
+        
+        ul li:nth-child(6) {
+            color: black;
+            padding-top: 20px;
+        }
+        
+        ul li:nth-child(7) {
+            color: red;
+            padding-top: 20px;
+        }
+        
+        ul li:nth-child(8) {
+            color: snow;
+            padding-top: 20px;
+        }
+        
+        .register-class {
+            width: 100%;
+            height: 600px;
+            position: relative;
+            top: 80px;
+            background-color: seashell;
+            display: inline-block;
+            border-bottom: 1px solid deeppink;
+        }
+        
+        .form-main {
+            width: 100%;
+            height: 600px;
+            background-color: transparent;
+            display: block;
+        }
+        
+        form {
+            width: 700px;
+            height: 600px;
+            background-color: transparent;
+            display: inline-block;
+            border: none;
+            position: relative;
+            top: 140px;
+            left: 0%;
+        }
+        
+        b {
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
+            color: indigo;
+            position: relative;
+            top: 100px;
+            left: 600px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        
+        tr,
+        td {
+            margin: 10px;
+        }
+        
+        input[type="text"] {
+            width: 300px;
+            height: 50px;
+            border: none;
+            border-radius: 1px;
+            padding-left: 200px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            color: deeppink;
+            letter-spacing: 5px;
+            outline: none;
+            border-bottom: 2px solid greenyellow;
+            cursor: pointer;
+            position: relative;
+            top: 20px;
+        }
+        
+        input[type="number"] {
+            width: 300px;
+            height: 50px;
+            border: none;
+            border-bottom: 2px solid greenyellow;
+            border-radius: 1px;
+            padding-left: 200px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            color: deeppink;
+            letter-spacing: 5px;
+            outline: none;
+            cursor: pointer;
+        }
+        
+        input[type="date"] {
+            width: 300px;
+            height: 50px;
+            border: none;
+            border-bottom: 2px solid greenyellow;
+            border-radius: 1px;
+            padding-left: 200px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            color: black;
+            letter-spacing: 5px;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            top: 20px;
+        }
+        
+        input[type="radio"] {
+            width: 15px;
+            height: 15px;
+            border: none;
+            border-bottom: 2px solid greenyellow;
+            border-radius: 1px;
+            padding: 10px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            color: deeppink;
+            letter-spacing: 5px;
+            outline: none;
+            position: relative;
+            top: 40px;
+            cursor: pointer;
+        }
+        
+        h7 {
+            position: relative;
+            top: 40px;
+        }
+        
+        select {
+            width: 500px;
+            height: 50px;
+            border: none;
+            border-bottom: 2px solid greenyellow;
+            border-radius: 1px;
+            padding-left: 170px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            color: black;
+            letter-spacing: 3px;
+            outline: none;
+            position: relative;
+            top: 30px;
+            cursor: pointer;
+        }
+        
+        input[type="number"] {
+            width: 300px;
+            height: 50px;
+            border: none;
+            border-bottom: 2px solid greenyellow;
+            border-radius: 1px;
+            padding-left: 200px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            color: deeppink;
+            letter-spacing: 5px;
+            outline: none;
+            cursor: pointer;
+        }
+        
+        input[type="text2"] {
+            width: 500px;
+            height: 50px;
+            border: none;
+            border-bottom: 2px solid greenyellow;
+            border-radius: 1px;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            color: deeppink;
+            letter-spacing: 5px;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            top: 20px;
+        }
+        
+        input[type="text3"] {
+            width: 500px;
+            height: 50px;
+            border: none;
+            border-bottom: 2px solid greenyellow;
+            border-radius: 1px;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            color: deeppink;
+            letter-spacing: 5px;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            top: 20px;
+        }
+        
+        input[type="submit"] {
+            width: 300px;
+            height: 50px;
+            border: none;
+            border-radius: 1px;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            color: black;
+            letter-spacing: 5px;
+            outline: none;
+            background-color: orange;
+            position: relative;
+            top: 40px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            border: 1px solid black;
+            background-color: whitesmoke;
+            color: black;
+        }
+        
+        input[type="reset"] {
+            width: 300px;
+            height: 50px;
+            border: none;
+            border-radius: 1px;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            color: white;
+            letter-spacing: 5px;
+            outline: none;
+            background-color: rebeccapurple;
+            position: relative;
+            top: 40px;
+            left: -110px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        
+        input[type="reset"]:hover {
+            border: 1px solid black;
+            background-color: black;
+            color: floralwhite;
+        }
+        
+        .about-college {
+            width: 100%;
+            height: 400px;
+            background-color: rgb(38, 44, 131);
+            position: relative;
+            top: 140px;
+        }
+        
+        h9 {
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bolder;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            filter: brightness(200%);
+        }
+        
+        p {
+            width: 400px;
+            height: 200px;
+            justify-content: flex-start;
+            display: flex;
+            position: relative;
+            left: 700px;
+            top: 100px;
+            font-family: sans-serif;
+            letter-spacing: 3px;
+            color: lavenderblush;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <img src="images/logo.jpeg" alt="" style="width: 70px;height: 70px;border-radius: 100%;float: left;padding-top: 20px;cursor: pointer;">
+
+        <ul>
+            <li>Dr.</li>&nbsp;&nbsp;&nbsp;
+            <li>T</li>&nbsp;&nbsp;&nbsp;
+            <li>M</li>&nbsp;&nbsp;&nbsp;
+            <li>A</li>&nbsp;&nbsp;&nbsp;
+            <li>Pai</li>&nbsp;&nbsp;&nbsp;
+            <li>Polytechnic</li>&nbsp;&nbsp;&nbsp;
+            <li>Manipal</li>&nbsp;&nbsp;&nbsp;
+            <li>- 576104</li>
+        </ul>
+    </div>
+    <div class="main">
+        <a href="http://localhost/StudentManagement/index.html">Home</a>
+        <a href="http://localhost/UpdatingRecord/FlightBooking/reg.php">About</a>
+        <a href="http://localhost/StudentManagement/contact.html">Contact</a>
+        <a href="http://localhost/StudentManagement/update.php">Update</a>
+        <a href="http://localhost/StudentManagement/search.php">Search</a>
+        <a href="http://localhost/UpdatingRecord/FlightBooking/search.php">Team</a>
+        <a href="http://localhost/StudentManagement/login.html">Login</a>
+    </div>
+    <div class="register-class">
+
+        <h4 style="font-family: sans-serif;font-weight: bolder; text-align: center;letter-spacing: 5px;
+        color: black;padding-top: 20px;text-shadow: 0 0 3px gray;">STUDENT REGISTRATION MANAGEMENT</h4>
+        <br>
+        <hr style="position: relative;
+        left: 480px;
+        top: -10px;
+        width: 550px;
+        height: 5px;
+        border-width: 0;
+        color: gray;
+        background-color: deeppink;
+        border-radius: 10px;"><br>
+        <img src="images/dd1.png" alt="" width="500" height="500" style="position:relative;left:200px;border:1px solid blue;box-shadow: 0 0 3px gray;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="images/dd2.png" alt="" width="500" height="500" style="position:relative;left:300px;border:1px solid blue;box-shadow: 0 0 3px gray;">
+    </div>
+    <div class="form-main">
+        <b>Register</b><br>
+        <hr color="greenyellow" style="width: 160px;height:2px;position: relative;top: 110px;left: 590px; border-radius:10px ;background-color: greenyellow;">
+        <img src="images/dd3.png" alt="" width="800" height="600" style="position: relative;top: 120px;">
+        <form action="http://localhost/StudentManagement/index.php" method="POST">
+            <table>
+                <tr>
+                    <td><input type="text" name="regno" id="" placeholder="Enter Regno" autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="uname" id="" placeholder="Enter Name" autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <td><input type="date" name="dte" id="" required></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="sex" id="" value="male">
+                        <h7>Male</h7>
+                    </td>
+                    <td><input type="radio" name="sex" id="" value="female">
+                        <h7>Female</h7>
+                    </td>
+                </tr>
+                <tr>
+                    <td><select name="dept" id="">
+                        <option value="-Select Department-">-Select Department-</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Mechanical">Mechanical</option>
+                        <option value="Electrical">Electrical</option>
+                        <option value="Civil">Civil</option>
+                      </select></td>
+                </tr>
+                <tr>
+                    <td><select name="crs" id="">
+                        <option value="-Select Course-">-Select Course-</option>
+                        <option value="Computer Science">ComputerScience</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                        <option value="Automobile Engineering">Automobile Engineering</option>
+                        <option value="Electrical & Electronics Engineering">Electrical & Electronics Engineering</option>
+                        <option value="Electronics & Communication Engineering">Electronics & Communication Engineering</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Mechatronics Engineering">Mechatronics Engineering</option>
+                        <option value="Printing Technology">Printing Technology</option>
+                        <option value="Short Terms Course">Short Terms Course</option>
+                        <option value="Apple Training">Apple Training</option>
+
+                      </select></td>
+                </tr>
+                <tr>
+                    <td><select name="sem" id="">
+                        <option value="-Select Semesteer-">-Select Semesteer-</option>
+                        <option value="First Semester">FirstSemester</option>
+                        <option value="Second Semester">Second Semester</option>
+                        <option value="Third Semester">Third Semester</option>
+                        <option value="Fourth Semester">Fourth Semester</option>
+                        <option value="Fifth Semester">Fifth Semester</option>
+                        <option value="Six Semester">Six Semester</option>
+                        <option value="Seven Semester">Seven Semester</option>
+                        <option value="Eight Semester">Eight Semester</option>
+                      </select></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="adrs" id="address" placeholder="Enter Address" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="ph" id="phoneno" placeholder="Enter Phoneno" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit" name="submit"></td>
+                    <td><input type="reset" value="Reset" name="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="about-college">
+        <h9>About Our College</h9><br>
+        <hr style="color:green;width:350px;border-radius:10px;position: relative;top: 110px;left: 80px;background-color: white;">
+        <p> The Polytechnic is located in the University town with an area of 10 acres of land and is well connected with public transport system.The nearest Railway station is Udupi with a distance of 4 kilometers and nearest airport is Bajpe-Mangalore with
+            a distance of 65 kilometers. This Institution has successfully completed 25 years in providing Technical Education in Automobile, Civil, Computer Science, Electronics & Communication Engineering and Printing Technology.
+        </p>
+    </div>
+
+</body>
+
+</html>

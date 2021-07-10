@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Login | Page</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .text {
+            position: absolute;
+            margin-left: 50%;
+            margin-top: 2%;
+            transform: translate(-50%, -50%);
+            background: lightskyblue;
+            width: 100%;
+            height: 100px;
+            left: 0;
+        }
+        
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+        }
+        
+        ul li {
+            font-size: 40px;
+            letter-spacing: 10px;
+            text-shadow: 1px 5px 10px #000042;
+            font-family: sans-serif;
+        }
+        
+        ul li:nth-child(1) {
+            padding-left: 100px;
+            padding-top: 20px;
+            color: #fff;
+        }
+        
+        ul li:nth-child(2) {
+            color: purple;
+            padding-top: 20px;
+        }
+        
+        ul li:nth-child(3) {
+            color: orange;
+            padding-top: 20px;
+        }
+        
+        ul li:nth-child(4) {
+            color: blue;
+            padding-top: 20px;
+        }
+        
+        ul li:nth-child(5) {
+            color: white;
+            padding-top: 20px;
+        }
+        
+        ul li:nth-child(6) {
+            color: black;
+            padding-top: 20px;
+        }
+        
+        ul li:nth-child(7) {
+            color: red;
+            padding-top: 20px;
+        }
+        
+        ul li:nth-child(8) {
+            color: snow;
+            padding-top: 20px;
+        }
+        
+        .main-sub {
+            position: absolute;
+            top: 80px;
+            width: 100%;
+            height: 700px;
+            border: none;
+            box-shadow: 0 0 10px darkorange inset;
+            background-image: url(images/happy-01.png);
+        }
+        
+        @media(max-width:500px) {
+            .main {
+                width: 440px;
+                height: 600px;
+                position: absolute;
+                left: -150px;
+                box-shadow: 0 0 20px firebrick inset;
+                border: 1px solid red;
+                border-radius: 10px;
+            }
+        }
+        
+        .sub_main_left {
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: forestgreen;
+            width: 700px;
+            height: 700px;
+            border-right: 2 px solid black;
+        }
+        
+        @media(max-width:500px) {
+            .sub_main_left {
+                width: 0;
+                height: 0;
+                visibility: hidden;
+            }
+        }
+        
+        .sub_main_right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 500px;
+            height: 550px;
+            border: none;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        
+        @media(max-width:500px) {
+            .sub_main_right {
+                width: 440px;
+                visibility: visible;
+                position: absolute;
+                left: -60px;
+            }
+        }
+        
+        .img {
+            border-radius: 100px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+        }
+        
+        @media(max-width:500px) {
+            .img {
+                width: 200px;
+                height: 200px;
+                position: relative;
+                left: 170px;
+            }
+        }
+        
+        b {
+            position: relative;
+            top: 10px;
+            left: 30px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-size: 20px;
+            color: black;
+            letter-spacing: 5px;
+            text-shadow: 0 0 3px white;
+        }
+        
+        @media(max-width:500px) {
+            b {
+                position: relative;
+                left: 230px;
+                color: deeppink;
+            }
+        }
+        
+        .input-group {
+            width: 400px;
+            height: 50px;
+            position: relative;
+            top: 70px;
+            left: -110px;
+            border-radius: 100px;
+            box-shadow: 0 0 5px black;
+            background-color: transparent;
+        }
+        
+        .form-control {
+            width: 300px;
+            height: 50px;
+            border-radius: 100px;
+            box-shadow: 0 0 5px deeppink;
+            background-color: transparent;
+            padding-left: 50px;
+            font-family: sans-serif;
+            text-transform: capitalize;
+            font-size: 12px;
+            font-weight: bolder;
+            letter-spacing: 3px;
+        }
+        
+        .btn-info {
+            position: relative;
+            top: 100px;
+            left: -110px;
+            display: block;
+            width: 180px;
+            height: 50px;
+            border-radius: 100px;
+            background-color: rgb(219, 10, 209);
+        }
+        
+        h1 {
+            position: relative;
+            top: 190px;
+            left: 15px;
+            color: orange;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            filter: brightness(100%);
+        }
+        
+        hr {
+            position: relative;
+            top: 180px;
+            left: 20px;
+            width: 40px;
+            height: 5px;
+            border-radius: 10px;
+        }
+        
+        .sub_main_text {
+            position: relative;
+            top: 200px;
+            left: 20px;
+            font-family: sans-serif;
+            justify-content: left;
+            color: whitesmoke;
+            font-size: 15px;
+            letter-spacing: 2px;
+            filter: brightness(200%);
+        }
+        
+        .btn-primary {
+            position: relative;
+            top: 210px;
+            left: 20px;
+            border-radius: 100px;
+            background-color: transparent;
+            border: 2px solid oldlace;
+        }
+        
+        .href {
+            position: relative;
+            color: black;
+            top: 90px;
+            left: 230px;
+            text-decoration: underline;
+        }
+        
+        input[type="text"] {
+            text-align: center;
+            color: deeppink;
+        }
+        
+        input[type="password"] {
+            text-align: center;
+            color: deeppink;
+        }
+        
+        input[type="submit"] {
+            width: 250px;
+            height: 40px;
+            background-color: transparent;
+            text-align: center;
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0 0 5px black;
+            border: none;
+            border-radius: 100px;
+            position: relative;
+            top: 100px;
+            left: -110px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: purple;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <img src="images/logo.jpeg" alt="" style="width: 70px;height: 70px;border-radius: 100%;float: left;padding-top: 30px;cursor: pointer;">
+        <ul>
+            <li>Dr.</li>&nbsp;&nbsp;&nbsp;
+            <li>T</li>&nbsp;&nbsp;&nbsp;
+            <li>M</li>&nbsp;&nbsp;&nbsp;
+            <li>A</li>&nbsp;&nbsp;&nbsp;
+            <li>Pai</li>&nbsp;&nbsp;&nbsp;
+            <li>Polytechnic</li>&nbsp;&nbsp;&nbsp;
+            <li>Manipal</li>&nbsp;&nbsp;&nbsp;
+            <li>- 576104</li>
+        </ul>
+    </div>
+    <div class="main-sub">
+        <div class="sub_main_left">
+            <h1>Welcome</h1>
+            <hr color="white" />
+            <div class="sub_main_text">
+                <p> Dr. T.M.A Pai Polytechnic was established in 1985 to cater to<br> the youth around Manipal-Udupi who faced<br> difficulties to continue their education after 10th standard due<br> to various reasons. The Polytechnic was started to provide<br>                    career opportunities to these young people. <br> The Polytechnic is named after the great son <br> of Udupi District Dr. T. M .A. Pai (1898-1979),<br> Physician, Banker, Educationist and the “Maker of Modern Manipal”.
+            </div>
+        </div>
+        <div class="sub_main_right">
+            <img src="images/profile_pic.png" class="img" /><br>
+            <b>SIGNING</b>
+            <form action="http://localhost/StudentManagement/login.php" method="post">
+                <div class="input-group">
+                    <input type="text" name="uname" class="form-control" autocomplete="off" placeholder="Enter Regno" required />
+                </div><br>
+                <div class="input-group">
+                    <input type="password" name="pass" class="form-control" autocomplete="off" placeholder="Enter Password" required />
+                </div>
+                <input type="submit" value="Login" name="submit">
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
